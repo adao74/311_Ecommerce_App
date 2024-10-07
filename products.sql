@@ -14,7 +14,9 @@ CREATE TABLE Products (
     brand_id INT,
     category_id INT,
     FOREIGN KEY (brand_id) REFERENCES Brands(id),
-    FOREIGN KEY (category_id) REFERENCES Category(id)
+    FOREIGN KEY (category_id) REFERENCES Category(id),
+    UNIQUE (name),
+    UNIQUE (page_title)
 );
 
 -- Inserting data into Products

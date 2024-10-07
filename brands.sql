@@ -7,7 +7,9 @@ CREATE TABLE Brands (
     description TEXT,
     search_keywords VARCHAR(255),
     views INT DEFAULT 0,
-    page_title VARCHAR(255)
+    page_title VARCHAR(255),
+    UNIQUE (name),
+    UNIQUE (page_title)
 );
 
 -- Inserting data into Brands
